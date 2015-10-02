@@ -1,0 +1,92 @@
+body {
+  overflow: auto;
+}
+
+
+.row {
+
+	margin-top: 15px;
+}
+
+
+/*Nav Section */
+
+.nav-pills li a {
+  color: black;
+}
+
+.nav-pills li {
+	border: solid black 1px;
+	border-radius: 5px;
+	background-color:white;
+}
+
+.nav-pills li a:hover,
+.section .btn:hover {
+  background-color:rgba(255,160,0,100);
+  box-shadow:0 2px 4px rgba(0,0,0,.5); 
+  color:#fff;
+  transition: all 0.3s ease 0s;
+}
+
+.main .container {
+	width:100%;
+	background-color: lightgray;
+}
+nav h3 {
+	float:left;
+}
+nav ul {
+	float:right;
+	margin-top: 10px;
+}
+
+/*Project Gallery section */
+
+#stage {
+	width:300px;
+	text-align:center;
+	margin-top:40px;
+	position: relative;
+}
+
+#stage img {
+	position:absolute;
+	max-height:100%;
+	max-width:100%;
+
+}
+
+/*arrows */
+
+
+#next {
+	width:0;
+	height:0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid black;
+}
+
+#previous {
+	width:0;
+	height:0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid black;
+}
+
+
+@media (max-width: 990px) {
+
+	.media_center {
+		text-align: center;
+	}
+
+	#stage {
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+
