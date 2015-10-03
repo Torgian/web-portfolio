@@ -57,6 +57,12 @@ nav ul {
 
 }
 
+/*Banner area */
+
+.banners img {
+	margin:10px;
+}
+
 /*arrows */
 
 
@@ -87,6 +93,12 @@ nav ul {
 		margin-left:auto;
 		margin-right:auto;
 	}
+
+	.banners > * {
+		display:inline-block;
+	}
+	
+	
 }
 
 
