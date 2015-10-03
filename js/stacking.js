@@ -62,11 +62,27 @@ $(o.next+','+o.prev+', '+stackImg).attr('unselectable','on')
 });
 
 $(document).ready (function(){
-	$('#stage').stack({
-		width: 250,
-		height: 200,
+	//$('#stage').stack({
+	//	width: 250,
+	//	height: 200,
+	//	next : '#next',
+	//	prev : '#previous'
+	//})
+	if (window.matchMedia("(max-width: 500px)").matches) {
+  /* the viewport is at least 500 pixels wide or less */
+  		$('#stage').stack({
+		width: 150,
+		height: 150,
 		next : '#next',
 		prev : '#previous'
 	})
+		} else {
+			$('#stage').stack({
+		width: 250,
+		height: 300,
+		next : '#next',
+		prev : '#previous'
+	})
+		}
 
 });
